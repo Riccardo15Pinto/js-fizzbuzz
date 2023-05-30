@@ -1,0 +1,57 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*generics*/
+
+body{
+    font-family: sans-serif;
+    background-color: gray;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*main*/
+
+#blackboard{
+    width: 1000px;
+    margin: 55px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    border-radius: 30px;
+}
+
+#blackboard > div {
+    flex-basis: calc(100% / 10 - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 30px;
+}
+
+/*utility*/
+
+.acqua{
+    background-color: aqua;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}
+
