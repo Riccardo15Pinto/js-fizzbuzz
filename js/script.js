@@ -8,21 +8,27 @@ const blackboard = document.getElementById('blackboard');
 for(let i = 1; i <= 100; i++) {
     //creo variabile frizz
     let word = '';
+    //creo variabile
+    let backcolor = '';
     //controllo i multipli di i
     if(!(i % 3) && !(i % 5)){
         word = 'FizzBuzz'
+        backcolor = 'red';
     }else if(!(i % 3)){
         word = 'Fizz';
+        backcolor = 'yellow';
     } else if (!(i % 5)){
         word = 'Buzz'
+        backcolor = 'orange';
     }else{
         word = i
+        backcolor = 'acqua';
     }
 
     console.log(word);
 
-    blackboard.innerHTML += `<div>${word}</div>`;
-    
+    blackboard.innerHTML += `<div class="${backcolor}">${word}</div>`;
+
 }
 
 
