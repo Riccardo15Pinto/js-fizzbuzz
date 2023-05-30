@@ -10,10 +10,11 @@ console.log(blackboard);
 // creo un ciclo che ripeta un numero da 1 a 100
 
 for(let i = 1; i <= 100; i++) {
-    console.log(i);
+    //creo variabile frizz
+    let words = '';
+    
     //controllo i multipli di i
     if(!i % 3){
-        i = "Fizz";
     }
     console.log(i);
 }
