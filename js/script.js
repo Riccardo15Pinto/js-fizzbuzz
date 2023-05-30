@@ -11,11 +11,20 @@ console.log(blackboard);
 
 for(let i = 1; i <= 100; i++) {
     //creo variabile frizz
-    let words = '';
-    
+    let word = '';
     //controllo i multipli di i
-    if(!i % 3){
+    if(!(i % 3)){
+       word = 'Fizz';
+    } else if (!(i % 5)){
+        word = 'Buzz'
     }
-    console.log(i);
+    
+    if(!(i % 3) && !(i % 5)){
+        word = 'FizzBuzz'
+    }else if (!(word)){
+        word = i
+    }
+
+    console.log(word);
 }
 
