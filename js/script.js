@@ -21,7 +21,8 @@ for(let i = 1; i <= 100; i++) {
 
     console.log(word);
 
-    blackboard.innerText += ' ' + word;
+    blackboard.innerHTML += `<div>${word}</div>`;
+    
 }
 
 
