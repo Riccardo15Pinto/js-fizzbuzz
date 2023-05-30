@@ -11,4 +11,10 @@ console.log(blackboard);
 
 for(let i = 1; i <= 100; i++) {
     console.log(i);
+    //controllo i multipli di i
+    if(!i % 3){
+        i = "Fizz";
+    }
+    console.log(i);
 }
+
